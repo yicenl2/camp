@@ -11,29 +11,33 @@
     {
       "name" : "SULF",
       "type" : "CHEM_SPEC",
-      "absolute integration tolerance" : 1.0E-03,
       "inorg note" : "using diffusion coefficient from dry dep",
       "N star" : 1.83,
-      "molecular weight [kg mol-1]" : 0.098079,
-      "HLC(298K) [M Pa-1]" :9.8692e5,
-      "HLC exp factor [K]" :8.684E+03,
-      "dry dep reactivity factor [unitless]" :0.000E+00,
-      "diffusion coeff [m2 s-1]" :1.260E-05,
-      "dry dep notes" : [
-        "using HLC from nist (https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664939&Units=SI&Mask=10#Solubility)"
-      ]
+      "molecular weight [kg mol-1]" : 0.098079
     },
     {
       "name" : "HNO3",
       "type" : "CHEM_SPEC",
       "inorg note" : "using diffusion coefficient from dry dep",
-      "N star" : 1.94
+      "N star" : 1.94,
+      "molecular weight [kg mol-1]" : 0.06301
     },
     {
       "name" : "NH3",
       "type" : "CHEM_SPEC",
       "inorg note" : "using diffusion coefficient from dry dep",
-      "N star" : 1.92
+      "N star" : 1.92,
+      "molecular weight [kg mol-1]" : 0.017031
+    },
+    {
+      "name" : "H2O_aq",
+      "type" : "CHEM_SPEC",
+      "phase" : "AEROSOL",
+      "tracer type" : "CONSTANT",
+      "absolute integration tolerance" : 1.0E-05,
+      "density [kg m-3]" : 1000.0,
+      "molecular weight [kg mol-1]" : 0.01801528,
+      "decscription" : "aerosol-phase water"
     },
     {
       "name" : "H_p",
@@ -83,6 +87,15 @@
       "density [kg m-3]" : 1840.0,
       "molecular weight [kg mol-1]" : 0.097069,
       "description" : "bisulfate ion"
+    },
+    {
+      "name" : "HNO3_aq",
+      "type" : "CHEM_SPEC",
+      "phase" : "AEROSOL",
+      "absolute integration tolerance" : 1.0E-05,
+      "density [kg m-3]" : 1510.0,
+      "molecular weight [kg mol-1]" : 0.0630129,
+      "description" : "undissociated aqueous-phase nitric acid"
     },
     {
       "name" : "NO3_m",
